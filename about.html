@@ -3,55 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About META - Mississippi Engineering Teachers Association</title>
+  <title>About META</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="meta-logo.png" alt="META Logo" class="logo">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div style="clear: both;"></div>
-    </div>
-  </header>
+<header class="glass-nav">
+  <div class="nav-container">
+    <a class="brand" href="index.html">
+      <img src="../meta-logo.png" alt="META Logo" class="nav-logo">
+      <span class="brand-text">META</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>About META</h1>
-      <p>Building a stronger engineering education community across Mississippi.</p>
-    </div>
+<main>
+  <section class="page-hero section">
+    <h1>About META</h1>
+    <p>We support Mississippi’s engineering educators with community, training, and advocacy.</p>
   </section>
 
-  <section class="about-content">
-    <div class="container">
+  <section class="two-col section">
+    <div>
       <h2>Who We Are</h2>
-      <p>The Mississippi Engineering Teachers Association (META) is a professional organization dedicated to advancing engineering education in the state of Mississippi. We represent middle school, high school, and post-secondary educators who are passionate about preparing the next generation of problem-solvers and innovators.</p>
-
-      <h2>What We Do</h2>
+      <p>The Mississippi Engineering Teachers Association (META) is a professional organization dedicated to advancing engineering education across Mississippi. We represent middle school, high school, and post-secondary educators committed to preparing the next generation of problem-solvers and innovators.</p>
+    </div>
+    <div class="info-box">
+      <h3>Our Focus</h3>
       <ul>
-        <li>Provide professional development and training for engineering educators</li>
-        <li>Host annual conferences and student competitions</li>
-        <li>Advocate for engineering in STEM curricula at all educational levels</li>
-        <li>Support the integration of real-world engineering practices in classrooms</li>
+        <li>Professional development and training</li>
+        <li>Annual conferences and student competitions</li>
+        <li>Advocacy for engineering in STEM curricula</li>
+        <li>Real-world practice in classrooms</li>
       </ul>
-
-      <h2>Our Vision</h2>
-      <p>To ensure every Mississippi student has access to high-quality engineering education, empowering them to lead in a technology-driven world.</p>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mississippi Engineering Teachers Association. All rights reserved.</p>
+  <section class="timeline section fade-in">
+    <h2>Milestones</h2>
+    <ol class="timeline-list">
+      <li><span class="dot"></span><div><h4>2010</h4><p>META founded by a coalition of Mississippi engineering educators.</p></div></li>
+      <li><span class="dot"></span><div><h4>2015</h4><p>Launched statewide student design challenge.</p></div></li>
+      <li><span class="dot"></span><div><h4>2020</h4><p>Shifted to hybrid PD with virtual workshops across districts.</p></div></li>
+      <li><span class="dot"></span><div><h4>2025</h4><p>Resource library expanded with new curricula and grants.</p></div></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Mississippi Engineering Teachers Association</h4>
+      <p>Empowering educators. Inspiring students. Advancing innovation.</p>
     </div>
-  </footer>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2025 META. All rights reserved.</div>
+</footer>
 </body>
 </html>
