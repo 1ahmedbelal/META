@@ -3,62 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Mississippi Engineering Teachers Association</title>
+  <title>Contact META</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="meta-logo.png" alt="META Logo" class="logo">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div style="clear: both;"></div>
-    </div>
-  </header>
+<header class="glass-nav">
+  <div class="nav-container">
+    <a class="brand" href="index.html">
+      <img src="../meta-logo.png" alt="META Logo" class="nav-logo">
+      <span class="brand-text">META</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>Contact Us</h1>
-      <p>Have questions? We’d love to hear from you.</p>
-    </div>
+<main>
+  <section class="page-hero section">
+    <h1>Contact Us</h1>
+    <p>Have questions? We’d love to hear from you.</p>
   </section>
 
-  <section class="contact-content">
-    <div class="container">
+  <section class="two-col section">
+    <div>
       <h2>Get in Touch</h2>
-      <p>Reach out to us with any questions, feedback, or partnership ideas. We are here to support Mississippi’s engineering education community.</p>
-
-      <h3>Email</h3>
-      <p><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></p>
-
-      <h3>Phone</h3>
-      <p>(601) 555-0199</p>
-
-      <h3>Mailing Address</h3>
-      <p>
-        Mississippi Engineering Teachers Association<br>
-        123 STEM Drive<br>
-        Jackson, MS 39201
-      </p>
-
-      <h3>Follow Us</h3>
-      <p>
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-      </p>
+      <p>Reach out for partnerships, membership, or general inquiries.</p>
+      <ul class="contact-list">
+        <li>📧 <a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li>📞 (601) 555-0199</li>
+        <li>📍 123 STEM Drive, Jackson, MS 39201</li>
+      </ul>
+      <div class="socials">
+        <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">Twitter</a>
+      </div>
+    </div>
+    <div class="info-box">
+      <h3>Send a Message</h3>
+      <form class="contact-form" id="contactForm">
+        <label>
+          Name
+          <input type="text" required>
+        </label>
+        <label>
+          Email
+          <input type="email" required>
+        </label>
+        <label>
+          Message
+          <textarea rows="5" required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mississippi Engineering Teachers Association. All rights reserved.</p>
+  <section class="map section">
+    <iframe title="Map" src="https://maps.google.com/maps?q=Jackson,%20MS&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Mississippi Engineering Teachers Association</h4>
+      <p>Empowering educators. Inspiring students. Advancing innovation.</p>
     </div>
-  </footer>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2025 META. All rights reserved.</div>
+</footer>
 </body>
 </html>
