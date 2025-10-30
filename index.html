@@ -3,145 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mississippi Engineering Teachers Association</title>
+  <title>META — Mississippi Engineering Teachers Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    body {
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem 0;
-    }
-
-    .logo {
-      height: 60px;
-      float: left;
-    }
-
-    .nav {
-      float: right;
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    .nav a:hover {
-      color: #fbe67b;
-    }
-
-    .hero {
-      background: url('../images/hero.jpg') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: white;
-      background-color: #002244;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      background-color: #fbe67b;
-      color: #003366;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #ffd60a;
-    }
-
-    .mission {
-      padding: 3rem 0;
-      background-color: white;
-      text-align: center;
-    }
-
-    .mission h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-    }
-  </style>
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="meta-logo.png" alt="META Logo" class="logo">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div style="clear: both;"></div>
-    </div>
-  </header>
+<header class="glass-nav">
+  <div class="nav-container">
+    <a class="brand" href="index.html">
+      <img src="../meta-logo.png" alt="META Logo" class="nav-logo">
+      <span class="brand-text">META</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Welcome to the Mississippi Engineering Teachers Association</h1>
-      <p>Empowering engineering educators and shaping the future of Mississippi’s STEM leadership.</p>
-      <a href="about.html" class="btn">Learn More</a>
+<main>
+  <section class="hero section fade-in">
+    <div class="hero-inner">
+      <h1 class="headline">Building Mississippi’s Future Engineers</h1>
+      <p class="subhead">A statewide community for teachers advancing engineering education.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="join.html">Become a Member</a>
+        <a class="btn btn-ghost" href="about.html">Discover META</a>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num" data-count="200">0</div>
+          <div class="stat-label">Members</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="34">0</div>
+          <div class="stat-label">Districts</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="15">0</div>
+          <div class="stat-label">Years of Impact</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
+  </section>
+
+  <section class="features section">
+    <div class="section-head">
+      <h2>What We Do</h2>
+      <p>Professional development, statewide events, and classroom-ready resources for engineering educators.</p>
+    </div>
+    <div class="card-grid">
+      <article class="card fade-in">
+        <h3>Professional Development</h3>
+        <p>Workshops and certifications that bring real-world engineering practice into the classroom.</p>
+        <a href="about.html" class="card-link">Learn more →</a>
+      </article>
+      <article class="card fade-in">
+        <h3>Student Competitions</h3>
+        <p>Design challenges that spark creativity and problem-solving across Mississippi.</p>
+        <a href="events.html" class="card-link">View events →</a>
+      </article>
+      <article class="card fade-in">
+        <h3>Resource Library</h3>
+        <p>Curricula, lesson plans, and grants to level up your program.</p>
+        <a href="resources.html" class="card-link">Explore resources →</a>
+      </article>
     </div>
   </section>
 
-  <section class="mission">
-    <div class="container">
-      <h2>Our Mission</h2>
-      <p>The META is committed to promoting engineering education excellence across the state by supporting teachers, organizing events, and providing resources that enhance classroom innovation and career readiness.</p>
-    </div>
+  <section class="cta-band section fade-in">
+    <h2>Ready to elevate engineering education in Mississippi?</h2>
+    <a class="btn btn-primary" href="join.html">Join META Today</a>
   </section>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mississippi Engineering Teachers Association. All rights reserved.</p>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Mississippi Engineering Teachers Association</h4>
+      <p>Empowering educators. Inspiring students. Advancing innovation.</p>
     </div>
-  </footer>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2025 META. All rights reserved.</div>
+</footer>
 </body>
 </html>
