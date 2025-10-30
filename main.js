@@ -1,3 +1,5 @@
+// mark page as JS-enabled (prevents white flash)
+document.documentElement.classList.add('js');
 // Mobile nav
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
