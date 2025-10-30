@@ -3,60 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Us - Mississippi Engineering Teachers Association</title>
+  <title>Join META</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="meta-logo.png" alt="META Logo" class="logo">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div style="clear: both;"></div>
-    </div>
-  </header>
+<header class="glass-nav">
+  <div class="nav-container">
+    <a class="brand" href="index.html">
+      <img src="../meta-logo.png" alt="META Logo" class="nav-logo">
+      <span class="brand-text">META</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>Become a META Member</h1>
-      <p>Connect. Collaborate. Elevate your impact in engineering education.</p>
+<main>
+  <section class="page-hero section">
+    <h1>Join META</h1>
+    <p>Connect. Collaborate. Elevate your impact in engineering education.</p>
+  </section>
+
+  <section class="section two-col">
+    <div>
+      <h2>Membership Benefits</h2>
+      <ul class="checklist">
+        <li>Exclusive teaching materials and resources</li>
+        <li>Access to conferences and competitions</li>
+        <li>Mentorship and collaboration network</li>
+        <li>Grant alerts and PD opportunities</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h3>Membership Tiers</h3>
+      <div class="tiers">
+        <div class="tier">
+          <h4>Standard</h4>
+          <div class="price">$25/yr</div>
+        </div>
+        <div class="tier">
+          <h4>Student Teacher</h4>
+          <div class="price">Free</div>
+        </div>
+        <div class="tier">
+          <h4>Lifetime</h4>
+          <div class="price">$250</div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="openJoin">Join Now</button>
     </div>
   </section>
 
-  <section class="join-content">
-    <div class="container">
-      <h2>Why Join META?</h2>
-      <ul>
-        <li>Access exclusive teaching materials and resources</li>
-        <li>Participate in statewide engineering competitions and conferences</li>
-        <li>Collaborate with a network of passionate engineering educators</li>
-        <li>Stay informed about grants, PD opportunities, and STEM policy updates</li>
-      </ul>
-
-      <h2>Membership Tiers</h2>
-      <ul>
-        <li><strong>Standard Member:</strong> $25/year – Full access to events and resources</li>
-        <li><strong>Student Teacher:</strong> Free – Access to mentoring and learning opportunities</li>
-        <li><strong>Lifetime Member:</strong> $250 one-time – Premium benefits and recognition</li>
-      </ul>
-
-      <h2>Ready to Join?</h2>
-      <p>Email <a href="mailto:membership@meta-ms.org">membership@meta-ms.org</a> or click the button below to fill out our online form.</p>
-      <a href="#" class="btn">Join Now</a>
+  <!-- Modal -->
+  <div class="modal" id="joinModal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="joinTitle">
+      <button class="modal-close" id="closeJoin">×</button>
+      <h3 id="joinTitle">Join META</h3>
+      <form class="join-form" id="joinForm">
+        <label>
+          Full Name
+          <input type="text" required>
+        </label>
+        <label>
+          Email
+          <input type="email" required>
+        </label>
+        <label>
+          School / Organization
+          <input type="text" required>
+        </label>
+        <label>
+          Membership Type
+          <select required>
+            <option>Standard ($25)</option>
+            <option>Student Teacher (Free)</option>
+            <option>Lifetime ($250)</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
-  </section>
+  </div>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mississippi Engineering Teachers Association. All rights reserved.</p>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Mississippi Engineering Teachers Association</h4>
+      <p>Empowering educators. Inspiring students. Advancing innovation.</p>
     </div>
-  </footer>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2025 META. All rights reserved.</div>
+</footer>
 </body>
 </html>
