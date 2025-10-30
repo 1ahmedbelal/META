@@ -3,62 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resources - Mississippi Engineering Teachers Association</title>
+  <title>META Resources</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="meta-logo.png" alt="META Logo" class="logo">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div style="clear: both;"></div>
-    </div>
-  </header>
+<header class="glass-nav">
+  <div class="nav-container">
+    <a class="brand" href="index.html">
+      <img src="../meta-logo.png" alt="META Logo" class="nav-logo">
+      <span class="brand-text">META</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>Teacher Resources</h1>
-      <p>Tools, guides, and materials to empower engineering educators in the classroom.</p>
-    </div>
+<main>
+  <section class="page-hero section">
+    <h1>Teacher Resources</h1>
+    <p>Tools, guides, and materials to empower engineering educators.</p>
   </section>
 
-  <section class="resources-content">
-    <div class="container">
-      <h2>Curriculum Materials</h2>
-      <ul>
-        <li><a href="#">High School Engineering Curriculum Guide (PDF)</a></li>
-        <li><a href="#">Middle School STEM Project Toolkit</a></li>
-        <li><a href="#">CAD and 3D Printing Lesson Plans</a></li>
-      </ul>
+  <section class="section resources">
+    <details class="drop" open>
+      <summary>Curriculum Materials</summary>
+      <div class="drop-body">
+        <div class="download-card"><span>📄</span><a href="#">High School Engineering Curriculum Guide (PDF)</a></div>
+        <div class="download-card"><span>🧰</span><a href="#">Middle School STEM Project Toolkit</a></div>
+        <div class="download-card"><span>🧵</span><a href="#">CAD & 3D Printing Lesson Plans</a></div>
+      </div>
+    </details>
 
-      <h2>Grant & Funding Opportunities</h2>
-      <ul>
-        <li><a href="#">MS Engineering Classroom Innovation Grant</a></li>
-        <li><a href="#">National STEM Educator Grant Programs</a></li>
-        <li><a href="#">Robotics Equipment Mini-Grants</a></li>
-      </ul>
+    <details class="drop">
+      <summary>Grant & Funding Opportunities</summary>
+      <div class="drop-body">
+        <div class="download-card"><span>💡</span><a href="#">MS Engineering Classroom Innovation Grant</a></div>
+        <div class="download-card"><span>🏛️</span><a href="#">National STEM Educator Programs</a></div>
+        <div class="download-card"><span>🤖</span><a href="#">Robotics Equipment Mini-Grants</a></div>
+      </div>
+    </details>
 
-      <h2>Professional Development</h2>
-      <ul>
-        <li><a href="#">PD Certification Tracker</a></li>
-        <li><a href="#">Online Course: Teaching Engineering Design</a></li>
-        <li><a href="#">Workshop Archive (Videos & Slides)</a></li>
-      </ul>
-    </div>
+    <details class="drop">
+      <summary>Professional Development</summary>
+      <div class="drop-body">
+        <div class="download-card"><span>✅</span><a href="#">PD Certification Tracker</a></div>
+        <div class="download-card"><span>🧑‍🏫</span><a href="#">Online Course: Teaching Engineering Design</a></div>
+        <div class="download-card"><span>🎥</span><a href="#">Workshop Archive (Videos & Slides)</a></div>
+      </div>
+    </details>
   </section>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mississippi Engineering Teachers Association. All rights reserved.</p>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Mississippi Engineering Teachers Association</h4>
+      <p>Empowering educators. Inspiring students. Advancing innovation.</p>
     </div>
-  </footer>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2025 META. All rights reserved.</div>
+</footer>
 </body>
 </html>
