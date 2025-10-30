@@ -3,62 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Events - Mississippi Engineering Teachers Association</title>
+  <title>META Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="meta-logo.png" alt="META Logo" class="logo">
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="events.html">Events</a>
-        <a href="resources.html">Resources</a>
-        <a href="join.html">Join Us</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div style="clear: both;"></div>
-    </div>
-  </header>
+<header class="glass-nav">
+  <div class="nav-container">
+    <a class="brand" href="index.html">
+      <img src="../meta-logo.png" alt="META Logo" class="nav-logo">
+      <span class="brand-text">META</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>Upcoming Events</h1>
-      <p>Stay up-to-date with professional development, student competitions, and conferences.</p>
-    </div>
+<main>
+  <section class="page-hero section">
+    <h1>Events & Programs</h1>
+    <p>Stay up to date with professional development, student competitions, and conferences.</p>
   </section>
 
-  <section class="events-list">
-    <div class="container">
-      <article class="event">
-        <h2>2025 META State Conference</h2>
-        <p><strong>Date:</strong> July 15–17, 2025</p>
-        <p><strong>Location:</strong> Jackson Convention Center, Jackson, MS</p>
-        <p>Join engineering educators from across the state for workshops, networking, and insights into the future of STEM education in Mississippi.</p>
+  <section class="events section">
+    <div class="card-grid events-grid">
+      <article class="event-card fade-in">
+        <div class="event-badge">July 15–17, 2025</div>
+        <h3>State Conference</h3>
+        <p class="event-meta">Jackson Convention Center • Jackson, MS</p>
+        <p>Workshops, networking, and insights into the future of STEM education in Mississippi.</p>
+        <a href="#" class="btn btn-ghost">Details</a>
       </article>
 
-      <article class="event">
-        <h2>Student Engineering Design Challenge</h2>
-        <p><strong>Date:</strong> March 8, 2025</p>
-        <p><strong>Location:</strong> University of Mississippi</p>
-        <p>High school teams compete in a hands-on challenge to design and present innovative engineering solutions to real-world problems.</p>
+      <article class="event-card fade-in">
+        <div class="event-badge">March 8, 2025</div>
+        <h3>Student Engineering Design Challenge</h3>
+        <p class="event-meta">University of Mississippi</p>
+        <p>Hands-on design challenge to solve real-world problems in teams.</p>
+        <a href="#" class="btn btn-ghost">Details</a>
       </article>
 
-      <article class="event">
-        <h2>Fall Teacher Workshop Series</h2>
-        <p><strong>Date:</strong> October 5–6, 2025</p>
-        <p><strong>Location:</strong> Online via Zoom</p>
-        <p>Free virtual sessions covering curriculum updates, grant opportunities, and classroom tech tools.</p>
+      <article class="event-card fade-in">
+        <div class="event-badge">Oct 5–6, 2025</div>
+        <h3>Fall Teacher Workshop Series</h3>
+        <p class="event-meta">Online via Zoom</p>
+        <p>Free virtual sessions: curriculum updates, grants, and classroom tech tools.</p>
+        <a href="#" class="btn btn-ghost">Details</a>
       </article>
     </div>
   </section>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Mississippi Engineering Teachers Association. All rights reserved.</p>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Mississippi Engineering Teachers Association</h4>
+      <p>Empowering educators. Inspiring students. Advancing innovation.</p>
     </div>
-  </footer>
+    <div>
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="mailto:info@meta-ms.org">info@meta-ms.org</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2025 META. All rights reserved.</div>
+</footer>
 </body>
 </html>
